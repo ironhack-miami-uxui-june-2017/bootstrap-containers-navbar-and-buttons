@@ -1,0 +1,49 @@
+/*img{
+  width: 200px;
+  height: 200px !important;
+}
+
+.item img{
+  width: 100%;
+  height: 500px !important;
+}*/
+
+body{
+  padding-top: 20px;
+}
+
+
+
+.myMadeUpClass{
+  height: 500px;
+  background-color: blue;
+}
+
+.fancy-background {
+  /*background: url('https://source.unsplash.com/b_8eErngWm4/1200x350') center / cover no-repeat;*/
+  background: url('images/wolf.jpg') center / cover no-repeat;
+}
+
+
+/*lazy solutions, works most, but not all of the time (use the !important)*/
+/*.myMadeUpNavClass{
+  background-color: green !important;
+  color: white !important;
+}*/
+
+
+.myMadeUpNavClass{
+  background-color: green;
+}
+
+/*below is the pro solution, inspect the element, find the super fancy*/
+/*selector that bootstrap is using, and copy/paste it and apply your own styles*/
+
+.myMadeUpNavClass .navbar-nav > li > a,
+.myMadeUpNavClass .navbar-brand {
+  color: white;
+}
+
+.madeUpLabelClass{
+  font-size: 35px;
+}
